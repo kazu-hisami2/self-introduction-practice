@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自己紹介-久光和輝</title>
+</head>
+<body>
+    <h1>自己紹介</h1>
+        <h2>プロフィール</h2>
+            <p>名前：久光和輝</p>
+            <p>年齢：31歳</p>
+            <p>出身地：岡山県</p>
+            <p>趣味：スポーツ観戦、謎解き</p>
+        <h2>好きなもの</h2>
+            <ul>
+                <li>焼肉</li>
+                <li>お寿司</li>
+                <li>お酒（ハイボールやサワー）</li>
+            </ul>
+        <h2>今年の目標</h2>
+            <ol>
+                <li><em>HTML</em>の構造や頻出タグをマスターする</li>
+                <li><strong>毎日</strong>コードを書く</li>
+                <li><em>Github</em>の草をできるだけ生やす(※コードはおろそかにしないように)</li>
+            </ol>
+        <h2>Githubのリンク</h2>
+            <a href="https://github.com/kazu-hisami2" target="_blank"><em>My Github link</em></a>
+        <h2>好きな風景</h2>
+            <img src="landscape.jpg" alt="好きな風景" width="400">
+        <div style="background-color:#f0f0f0;padding: 15px;">
+            <h2>お問い合わせ(<span style="color: red;">*</span>：必須)</h2>
+            <form action="/submit" method="/post">
+                <p>
+                    <label for="user-name"><span style="color: red;">*</span>お名前:</label>
+                    <input type="text" id="user-name" name="username" placeholder="お名前を入力" required>
+                </p>
+                <p>
+                    <label for="contact-category">お問い合わせ種別:</label>
+                    <select id="contact-category" name="category">
+                        <option value="">-- 選択してください --</option>
+                        <option value="contact">一般的なお問い合わせ</option>
+                        <option value="opinion">ご意見・ご要望</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="contact-date">お問い合わせ日:</label>
+                    <input type="date" id="contact-date" name="date">
+                </p>
+                <p>
+                    <label id="contact"><span style="color: red;">*</span>お問い合わせ内容:</label>
+                    <textarea id="contact" name="message" rows="5" cols="40" placeholder="お問い合わせ内容を入力してください" required></textarea>
+                </p>
+                <button type="submit">送信する</button>
+            </form>
+</body>
+</html>
